@@ -1,0 +1,219 @@
+@media (max-width:992px) {
+    .films__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows       : minmax(640px, max-content)
+    }
+
+    .films__card {
+        gap: 10px;
+    }
+
+    .films__text {
+        font-size: 24px;
+    }
+
+    .series__inner_cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas  :
+            "thrones thrones"
+            "wanda wanda"
+            "flash great"
+            "gotham witcher";
+        grid-auto-rows: minmax(360px, max-content);
+    }
+
+    .collection__items {
+        grid-template-columns: 60%;
+        grid-auto-rows       : 250px;
+        justify-content      : center;
+    }
+
+    .widow {
+        background: linear-gradient(180deg, #DEF7FF 0%, #F4FCFF 10%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+
+@media (max-width:768px) {
+    .films__cards {
+        grid-auto-rows: minmax(380px, max-content);
+
+        justify-content: center;
+    }
+
+    .header__content_inner {
+        text-align: center;
+        max-width : 500px;
+    }
+
+    .header__content_text {
+        text-align: center;
+    }
+
+    .header__content_title {
+        font-size  : 45px;
+        line-height: 40px;
+    }
+
+    .wanda .series__inner_card-bg {
+        object-fit: cover;
+    }
+
+    .series__inner_card-bg {
+        object-fit: unset;
+    }
+
+    .thrones .series__inner_card-bg {
+        object-fit: cover;
+    }
+
+    .series__inner_cards {
+        grid-auto-rows: minmax(250px, max-content);
+    }
+
+    .footer__item {
+        flex-direction: column;
+        gap           : 30px;
+    }
+
+    .films__text {
+        font-size: 14px;
+    }
+
+    .films__title {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:576px) {
+
+    .nav__inner {
+        flex-direction: column;
+        padding-top   : 20px;
+    }
+
+    .header__content_inner {
+        height: 500px;
+    }
+
+    .nav__list {
+        gap: 15px;
+    }
+
+    .nav__list_link:not(:last-child) {
+        margin-right: unset;
+    }
+
+    .collection__title {
+        margin: 0 auto;
+    }
+
+    .header__content_title {
+        font-size    : 40px;
+        margin-bottom: 10px;
+        text-align   : center;
+        line-height  : 50px;
+    }
+
+    .header__content_btns {
+        display        : flex;
+        justify-content: center;
+        gap            : 30px;
+    }
+
+    .header__content_btns .btn {
+        padding: 17px 20px;
+    }
+
+    .films__cards {
+        grid-template-columns: 255px;
+        justify-content      : center;
+    }
+
+    .films__card_img {
+        object-fit: fill;
+    }
+
+    .films__time {
+        margin-top   : 10px;
+        margin-bottom: 10px;
+    }
+
+    .films__card_title {
+        margin-bottom: 0;
+    }
+
+    .films__text {
+        text-align: center;
+    }
+
+    .widow__content img {
+        width: 100%;
+    }
+
+    .widow__content {
+        text-align: center;
+    }
+
+    .widow__content_text {
+        text-align: center;
+    }
+
+    .collection__items {
+        grid-template-columns: 100%;
+    }
+
+    .widow__content_text {
+        font-size  : 14px;
+        line-height: 24px;
+        margin-top : 25px;
+    }
+
+    .series__inner_cards {
+        grid-template-columns: 1fr;
+        grid-template-areas  :
+            "thrones"
+            "wanda"
+            "flash"
+            "great"
+            "gotham"
+            "witcher";
+    }
+
+    .series__inner_cards {
+        grid-auto-rows: minmax(280px, max-content);
+    }
+
+    .series__inner_card-text {
+        font-size    : 13px;
+        line-height  : 19px;
+        margin-top   : 12px;
+        margin-bottom: 24px;
+        text-align   : center;
+    }
+
+    .thrones {
+        padding: 30px 10px;
+    }
+
+    .thrones .series__inner_card-bg {
+        object-fit: cover;
+    }
+
+    .btn {
+        margin-right: 0;
+    }
+
+    .span__padding {
+        padding: 25px 0;
+    }
+}
+
+@media(max-width:375px) {
+    .header__content_title {
+        font-size: 31px;
+    }
+
+    .header__content_text {
+        margin-bottom: 25px;
+    }
+}
